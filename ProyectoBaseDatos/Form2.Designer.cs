@@ -131,14 +131,16 @@
             // itemActualizarModelo
             // 
             itemActualizarModelo.Name = "itemActualizarModelo";
-            itemActualizarModelo.Size = new Size(218, 26);
+            itemActualizarModelo.Size = new Size(224, 26);
             itemActualizarModelo.Text = "Actualizar modelo";
+            itemActualizarModelo.Click += itemActualizarModelo_Click;
             // 
             // itemActualizarTronquel
             // 
             itemActualizarTronquel.Name = "itemActualizarTronquel";
-            itemActualizarTronquel.Size = new Size(218, 26);
+            itemActualizarTronquel.Size = new Size(224, 26);
             itemActualizarTronquel.Text = "Actualizar tronquel";
+            itemActualizarTronquel.Click += itemActualizarTronquel_Click;
             // 
             // itemMostrarElementos
             // 

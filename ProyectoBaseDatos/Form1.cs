@@ -7,14 +7,14 @@ namespace ProyectoBaseDatos
     public partial class FormNumesmatica : Form
     {
 
-        private string strConexion = "Data Source=DESKTOP-LUT2TPL; Initial Catalog=NumismaticaBaseDatos; Integrated Security=SSPI";
+        //private string strConexion = "Data Source=DESKTOP-LUT2TPL; Initial Catalog=NumismaticaBaseDatos; Integrated Security=SSPI";
         private ConexionSQLServer generadorConexion;
 
 
         public FormNumesmatica()
         {
-            generadorConexion = new ConexionSQLServer(strConexion);
-            //generadorConexion = new ConexionSQLServer();
+            //generadorConexion = new ConexionSQLServer(strConexion);
+            generadorConexion = new ConexionSQLServer();
             InitializeComponent();
         }
 

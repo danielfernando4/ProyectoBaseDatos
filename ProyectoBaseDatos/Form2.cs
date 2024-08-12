@@ -38,7 +38,7 @@ namespace ProyectoBaseDatos
 
         private void itemMostrarElementos_Click(object sender, EventArgs e)
         {
-            string consulta = "SELECT modelos.codigo_modelo, valor_facial, diametro, peso, codigo_tronquel, año_acuñacion, año_grabado FROM modelos, tronqueles WHERE modelos.codigo_modelo = tronqueles.codigo_modelo";
+            string consulta = "SELECT modelos.codigo_modelo, valor_facial, diametro, peso, codigo_tronquel, año_acuñacion, año_grabado FROM modelos LEFT JOIN tronqueles ON modelos.codigo_modelo = tronqueles.codigo_modelo";
             conexionGenerador.GenerarTabla(consulta, this.tablaElementos);
         }
 
@@ -137,6 +137,20 @@ namespace ProyectoBaseDatos
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void itemActualizarModelo_Click(object sender, EventArgs e)
+        {
+            FormUpdateModelo formUpdateModelo = new FormUpdateModelo();
+
+            formUpdateModelo.ShowDialog();
+        }
+
+        private void itemActualizarTronquel_Click(object sender, EventArgs e)
+        {
+            FormUpdateTronqueles formUpdateTronqueles = new FormUpdateTronqueles();
+
+            formUpdateTronqueles.ShowDialog();
         }
     }
 }

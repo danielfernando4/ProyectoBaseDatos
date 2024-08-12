@@ -13,6 +13,7 @@ namespace ProyectoBaseDatos
 {
     public partial class FormInsertarTronquel : Form
     {
+        private ConexionSQLServer conexionGenerador = new ConexionSQLServer();
         public FormInsertarTronquel()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace ProyectoBaseDatos
         {
             try
             {
-                string strConexion = "Data Source=DESKTOP-LUT2TPL; Initial Catalog=NumismaticaBaseDatos; Integrated Security=SSPI";
+                string strConexion = conexionGenerador.StrConexion();
                 using (SqlConnection conexion = new SqlConnection(strConexion))
                 {
                     string query = "INSERT INTO tronqueles VALUES(@codigo_tronquel, @codigo_modelo, @año_acuñacion, @año_grabado, @descripcion)";

@@ -13,6 +13,7 @@ namespace ProyectoBaseDatos
 {
     public partial class FormEliminarTronqueles : Form
     {
+        private ConexionSQLServer conexionGenerador = new ConexionSQLServer();
         public FormEliminarTronqueles()
         {
             InitializeComponent();
@@ -27,13 +28,13 @@ namespace ProyectoBaseDatos
         {
             try
             {
-                string strConexion = "Data Source=DESKTOP-LUT2TPL; Initial Catalog=NumismaticaBaseDatos; Integrated Security=SSPI";
+                string strConexion = conexionGenerador.StrConexion();
                 using (SqlConnection conexion = new SqlConnection(strConexion))
                 {
                     string query = "DELETE FROM modelos WHERE " + this.opcionesEliminar.SelectedItem.ToString() + " = @opcion";
 
                     SqlCommand command = new SqlCommand(query, conexion);
-                    command.Parameters.AddWithValue("@opcion", this.txtCualidadEliminar);
+                    command.Parameters.AddWithValue("@opcion", this.txtCualidadEliminar.Text);
 
                     conexion.Open();
                     command.ExecuteNonQuery();

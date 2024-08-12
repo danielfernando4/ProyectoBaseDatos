@@ -12,8 +12,10 @@ using System.Data.SqlClient;
 
 namespace ProyectoBaseDatos
 {
+    
     public partial class FormInsertarModelo : Form
     {
+        private ConexionSQLServer conexionGenerador = new ConexionSQLServer();
         public FormInsertarModelo()
         {
             InitializeComponent();
@@ -23,7 +25,7 @@ namespace ProyectoBaseDatos
         {
             try
             {
-                string strConexion = "Data Source=DESKTOP-LUT2TPL; Initial Catalog=NumismaticaBaseDatos; Integrated Security=SSPI";
+                string strConexion =conexionGenerador.StrConexion();
                 using (SqlConnection conexion = new SqlConnection(strConexion))
                 {
                     string query = "INSERT INTO modelos VALUES(@codigo_modelo, @valor_facial, @unidad_monetaria, @diametro, @peso, @descripcion)";
