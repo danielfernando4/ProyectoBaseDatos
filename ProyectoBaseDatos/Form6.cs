@@ -31,7 +31,7 @@ namespace ProyectoBaseDatos
                 string strConexion = conexionGenerador.StrConexion();
                 using (SqlConnection conexion = new SqlConnection(strConexion))
                 {
-                    string query = "DELETE FROM modelos WHERE " + this.opcionesEliminar.SelectedItem.ToString() + " = @opcion";
+                    string query = "DELETE FROM tronqueles WHERE " + this.opcionesEliminar.SelectedItem.ToString() + " = @opcion";
 
                     SqlCommand command = new SqlCommand(query, conexion);
                     command.Parameters.AddWithValue("@opcion", this.txtCualidadEliminar.Text);

@@ -131,14 +131,14 @@
             // itemActualizarModelo
             // 
             itemActualizarModelo.Name = "itemActualizarModelo";
-            itemActualizarModelo.Size = new Size(224, 26);
+            itemActualizarModelo.Size = new Size(218, 26);
             itemActualizarModelo.Text = "Actualizar modelo";
             itemActualizarModelo.Click += itemActualizarModelo_Click;
             // 
             // itemActualizarTronquel
             // 
             itemActualizarTronquel.Name = "itemActualizarTronquel";
-            itemActualizarTronquel.Size = new Size(224, 26);
+            itemActualizarTronquel.Size = new Size(218, 26);
             itemActualizarTronquel.Text = "Actualizar tronquel";
             itemActualizarTronquel.Click += itemActualizarTronquel_Click;
             // 
@@ -193,7 +193,8 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Form2";
-            Text = "Form2";
+            Text = "Administración";
+            WindowState = FormWindowState.Minimized;
             ((System.ComponentModel.ISupportInitialize)tablaElementos).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

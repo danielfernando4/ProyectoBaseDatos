@@ -42,7 +42,7 @@ namespace ProyectoBaseDatos
                 "diametro, peso, codigo_tronquel AS 'codigo tronquel'" +
                 ",año_acuñacion AS 'año acuñación',año_grabado AS 'año grabado'" +
                 ",modelos.descripcion AS 'descripción modelos'" +
-                ",tronqueles.descripcion AS 'descripción tronqueles'" +
+                ",tronqueles.descripcion AS 'descripción trónqueles'" +
                 "FROM modelos LEFT JOIN tronqueles " +
                 "ON modelos.codigo_modelo = tronqueles.codigo_modelo";
             conexionGenerador.GenerarTabla(consulta, this.tablaElementos);
