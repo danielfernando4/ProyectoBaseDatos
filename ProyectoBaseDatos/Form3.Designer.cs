@@ -75,54 +75,60 @@
             // lblModelo
             // 
             lblModelo.AutoSize = true;
+            lblModelo.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic);
             lblModelo.Location = new Point(29, 79);
             lblModelo.Name = "lblModelo";
-            lblModelo.Size = new Size(205, 20);
+            lblModelo.Size = new Size(266, 28);
             lblModelo.TabIndex = 4;
             lblModelo.Text = "Ingrese el código del modelo";
             // 
             // lblValorFacial
             // 
             lblValorFacial.AutoSize = true;
+            lblValorFacial.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic);
             lblValorFacial.Location = new Point(503, 79);
             lblValorFacial.Name = "lblValorFacial";
-            lblValorFacial.Size = new Size(150, 20);
+            lblValorFacial.Size = new Size(204, 28);
             lblValorFacial.TabIndex = 5;
             lblValorFacial.Text = "Ingrese el valor facial";
             // 
             // lblUnidadM
             // 
             lblUnidadM.AutoSize = true;
+            lblUnidadM.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic);
             lblUnidadM.Location = new Point(29, 166);
             lblUnidadM.Name = "lblUnidadM";
-            lblUnidadM.Size = new Size(195, 20);
+            lblUnidadM.Size = new Size(266, 28);
             lblUnidadM.TabIndex = 6;
             lblUnidadM.Text = "Ingrese la unidad monetaria";
             // 
             // lblDiametro
             // 
             lblDiametro.AutoSize = true;
+            lblDiametro.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic);
             lblDiametro.Location = new Point(29, 287);
             lblDiametro.Name = "lblDiametro";
-            lblDiametro.Size = new Size(138, 20);
+            lblDiametro.Size = new Size(185, 28);
             lblDiametro.TabIndex = 7;
             lblDiametro.Text = "Ingrese el diametro";
             // 
             // lblDescripcion
             // 
             lblDescripcion.AutoSize = true;
+            lblDescripcion.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic);
             lblDescripcion.Location = new Point(488, 287);
             lblDescripcion.Name = "lblDescripcion";
-            lblDescripcion.Size = new Size(153, 20);
+            lblDescripcion.Size = new Size(205, 28);
             lblDescripcion.TabIndex = 8;
             lblDescripcion.Text = "Ingrese la descripción";
             // 
             // lblPeso
             // 
             lblPeso.AutoSize = true;
+            lblPeso.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic);
             lblPeso.Location = new Point(488, 166);
             lblPeso.Name = "lblPeso";
-            lblPeso.Size = new Size(109, 20);
+            lblPeso.Size = new Size(143, 28);
             lblPeso.TabIndex = 9;
             lblPeso.Text = "Ingrese el peso";
             // 
@@ -143,9 +149,10 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(317, 34);
+            lblTitulo.Font = new Font("Algerian", 16.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitulo.Location = new Point(157, 23);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(191, 20);
+            lblTitulo.Size = new Size(440, 31);
             lblTitulo.TabIndex = 12;
             lblTitulo.Text = "Insertar Valores del Modelo";
             // 

@@ -33,37 +33,40 @@
             opcionesEliminar = new ComboBox();
             txtCualidadEliminar = new TextBox();
             btnEliminar = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(176, 23);
+            lblTitulo.Font = new Font("Segoe UI Black", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitulo.Location = new Point(135, 9);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(125, 20);
+            lblTitulo.Size = new Size(266, 38);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Eliminar Tronquel";
             // 
             // lblCualidadEliminar
             // 
             lblCualidadEliminar.AutoSize = true;
-            lblCualidadEliminar.Location = new Point(277, 73);
+            lblCualidadEliminar.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Bold | FontStyle.Italic);
+            lblCualidadEliminar.Location = new Point(325, 71);
             lblCualidadEliminar.Name = "lblCualidadEliminar";
-            lblCualidadEliminar.Size = new Size(204, 20);
+            lblCualidadEliminar.Size = new Size(234, 20);
             lblCualidadEliminar.TabIndex = 1;
             lblCualidadEliminar.Text = "Ingresa la cualidad a eliminar";
             // 
             // opcionesEliminar
             // 
             opcionesEliminar.FormattingEnabled = true;
-            opcionesEliminar.Location = new Point(34, 88);
+            opcionesEliminar.Location = new Point(28, 107);
             opcionesEliminar.Name = "opcionesEliminar";
             opcionesEliminar.Size = new Size(151, 28);
             opcionesEliminar.TabIndex = 2;
             // 
             // txtCualidadEliminar
             // 
-            txtCualidadEliminar.Location = new Point(254, 121);
+            txtCualidadEliminar.Location = new Point(295, 107);
             txtCualidadEliminar.Name = "txtCualidadEliminar";
             txtCualidadEliminar.Size = new Size(251, 27);
             txtCualidadEliminar.TabIndex = 3;
@@ -78,11 +81,22 @@
             btnEliminar.UseVisualStyleBackColor = true;
             btnEliminar.Click += btnEliminar_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Symbol", 9F, FontStyle.Bold | FontStyle.Italic);
+            label1.Location = new Point(-2, 85);
+            label1.Name = "label1";
+            label1.Size = new Size(283, 20);
+            label1.TabIndex = 5;
+            label1.Text = "Seleccione la columna de referencia";
+            // 
             // FormEliminarTronqueles
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(571, 245);
+            Controls.Add(label1);
             Controls.Add(btnEliminar);
             Controls.Add(txtCualidadEliminar);
             Controls.Add(opcionesEliminar);
@@ -101,5 +115,6 @@
         private ComboBox opcionesEliminar;
         private TextBox txtCualidadEliminar;
         private Button btnEliminar;
+        private Label label1;
     }
 }

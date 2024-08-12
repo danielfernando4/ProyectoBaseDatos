@@ -39,50 +39,56 @@
             txtAnioGrab = new TextBox();
             txtDescripcion = new TextBox();
             btnIngresarTronquel = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // lblCodigoTronquel
             // 
             lblCodigoTronquel.AutoSize = true;
-            lblCodigoTronquel.Location = new Point(26, 49);
+            lblCodigoTronquel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            lblCodigoTronquel.Location = new Point(26, 58);
             lblCodigoTronquel.Name = "lblCodigoTronquel";
-            lblCodigoTronquel.Size = new Size(209, 20);
+            lblCodigoTronquel.Size = new Size(288, 28);
             lblCodigoTronquel.TabIndex = 0;
             lblCodigoTronquel.Text = "Ingrese el código del tronquel";
             // 
             // lblCodigoModelo
             // 
             lblCodigoModelo.AutoSize = true;
+            lblCodigoModelo.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             lblCodigoModelo.Location = new Point(26, 159);
             lblCodigoModelo.Name = "lblCodigoModelo";
-            lblCodigoModelo.Size = new Size(205, 20);
+            lblCodigoModelo.Size = new Size(280, 28);
             lblCodigoModelo.TabIndex = 1;
             lblCodigoModelo.Text = "Ingrese el código del modelo";
             // 
             // lblAnioAcu
             // 
             lblAnioAcu.AutoSize = true;
+            lblAnioAcu.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             lblAnioAcu.Location = new Point(26, 267);
             lblAnioAcu.Name = "lblAnioAcu";
-            lblAnioAcu.Size = new Size(194, 20);
+            lblAnioAcu.Size = new Size(268, 28);
             lblAnioAcu.TabIndex = 2;
             lblAnioAcu.Text = "Ingrese el año de acuñación";
             // 
             // lblAnioGrabado
             // 
             lblAnioGrabado.AutoSize = true;
-            lblAnioGrabado.Location = new Point(364, 49);
+            lblAnioGrabado.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            lblAnioGrabado.Location = new Point(379, 58);
             lblAnioGrabado.Name = "lblAnioGrabado";
-            lblAnioGrabado.Size = new Size(184, 20);
+            lblAnioGrabado.Size = new Size(252, 28);
             lblAnioGrabado.TabIndex = 3;
             lblAnioGrabado.Text = "Ingrese el año de grabado";
             // 
             // lblDescripcion
             // 
             lblDescripcion.AutoSize = true;
+            lblDescripcion.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             lblDescripcion.Location = new Point(364, 159);
             lblDescripcion.Name = "lblDescripcion";
-            lblDescripcion.Size = new Size(153, 20);
+            lblDescripcion.Size = new Size(210, 28);
             lblDescripcion.TabIndex = 4;
             lblDescripcion.Text = "Ingrese la descripción";
             // 
@@ -131,11 +137,22 @@
             btnIngresarTronquel.UseVisualStyleBackColor = true;
             btnIngresarTronquel.Click += btnIngresarTronquel_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Historic", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(197, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(246, 38);
+            label1.TabIndex = 11;
+            label1.Text = "Insertar Tronquel";
+            // 
             // FormInsertarTronquel
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(683, 352);
+            Controls.Add(label1);
             Controls.Add(btnIngresarTronquel);
             Controls.Add(txtDescripcion);
             Controls.Add(txtAnioGrab);
@@ -166,5 +183,6 @@
         private TextBox txtAnioGrab;
         private TextBox txtDescripcion;
         private Button btnIngresarTronquel;
+        private Label label1;
     }
 }

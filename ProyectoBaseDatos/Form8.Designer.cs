@@ -43,27 +43,30 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(245, 23);
+            lblTitulo.Font = new Font("Segoe UI Black", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitulo.Location = new Point(194, 9);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(137, 20);
+            lblTitulo.Size = new Size(294, 38);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Actualizar Tronquel";
             // 
             // lblColumna
             // 
             lblColumna.AutoSize = true;
+            lblColumna.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             lblColumna.Location = new Point(30, 78);
             lblColumna.Name = "lblColumna";
-            lblColumna.Size = new Size(237, 20);
+            lblColumna.Size = new Size(256, 20);
             lblColumna.TabIndex = 1;
             lblColumna.Text = "Seleccione la columna a actualizar";
             // 
             // lblValor
             // 
             lblValor.AutoSize = true;
+            lblValor.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             lblValor.Location = new Point(386, 108);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(175, 20);
+            lblValor.Size = new Size(192, 20);
             lblValor.TabIndex = 2;
             lblValor.Text = "Ingrese el valor a insertar";
             // 
@@ -96,18 +99,20 @@
             // lblColumnaCondicion
             // 
             lblColumnaCondicion.AutoSize = true;
+            lblColumnaCondicion.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             lblColumnaCondicion.Location = new Point(30, 207);
             lblColumnaCondicion.Name = "lblColumnaCondicion";
-            lblColumnaCondicion.Size = new Size(240, 20);
+            lblColumnaCondicion.Size = new Size(257, 20);
             lblColumnaCondicion.TabIndex = 6;
             lblColumnaCondicion.Text = "Ingrese la columna de la condición";
             // 
             // lblCondicion
             // 
             lblCondicion.AutoSize = true;
+            lblCondicion.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             lblCondicion.Location = new Point(157, 307);
             lblCondicion.Name = "lblCondicion";
-            lblCondicion.Size = new Size(216, 20);
+            lblCondicion.Size = new Size(231, 20);
             lblCondicion.TabIndex = 7;
             lblCondicion.Text = "Ingrese el valor de la condición";
             // 

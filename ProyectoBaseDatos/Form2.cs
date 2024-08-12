@@ -38,7 +38,13 @@ namespace ProyectoBaseDatos
 
         private void itemMostrarElementos_Click(object sender, EventArgs e)
         {
-            string consulta = "SELECT modelos.codigo_modelo, valor_facial, diametro, peso, codigo_tronquel, año_acuñacion, año_grabado FROM modelos LEFT JOIN tronqueles ON modelos.codigo_modelo = tronqueles.codigo_modelo";
+            string consulta = "SELECT modelos.codigo_modelo AS 'codigo modelo', valor_facial AS 'valor facial', " +
+                "diametro, peso, codigo_tronquel AS 'codigo tronquel'" +
+                ",año_acuñacion AS 'año acuñación',año_grabado AS 'año grabado'" +
+                ",modelos.descripcion AS 'descripción modelos'" +
+                ",tronqueles.descripcion AS 'descripción tronqueles'" +
+                "FROM modelos LEFT JOIN tronqueles " +
+                "ON modelos.codigo_modelo = tronqueles.codigo_modelo";
             conexionGenerador.GenerarTabla(consulta, this.tablaElementos);
         }
 

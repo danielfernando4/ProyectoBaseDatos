@@ -39,9 +39,10 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(178, 21);
+            lblTitulo.Font = new Font("Segoe UI Symbol", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitulo.Location = new Point(173, 9);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(119, 20);
+            lblTitulo.Size = new Size(249, 41);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "Eliminar Modelo";
             // 
@@ -63,18 +64,20 @@
             // lblCualidadEliminar
             // 
             lblCualidadEliminar.AutoSize = true;
-            lblCualidadEliminar.Location = new Point(276, 80);
+            lblCualidadEliminar.Font = new Font("Segoe UI Emoji", 10.8F, FontStyle.Bold | FontStyle.Italic);
+            lblCualidadEliminar.Location = new Point(261, 92);
             lblCualidadEliminar.Name = "lblCualidadEliminar";
-            lblCualidadEliminar.Size = new Size(204, 20);
+            lblCualidadEliminar.Size = new Size(268, 24);
             lblCualidadEliminar.TabIndex = 3;
             lblCualidadEliminar.Text = "Ingrese la cualidad a eliminar";
             // 
             // lblComboBox
             // 
             lblComboBox.AutoSize = true;
-            lblComboBox.Location = new Point(60, 57);
+            lblComboBox.Font = new Font("Segoe UI Emoji", 10.8F, FontStyle.Bold | FontStyle.Italic);
+            lblComboBox.Location = new Point(27, 68);
             lblComboBox.Name = "lblComboBox";
-            lblComboBox.Size = new Size(90, 20);
+            lblComboBox.Size = new Size(117, 24);
             lblComboBox.TabIndex = 4;
             lblComboBox.Text = "Eliminar por";
             // 

@@ -53,36 +53,40 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(213, 29);
+            lblTitulo.Font = new Font("Segoe UI Black", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTitulo.Location = new Point(153, 20);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(131, 20);
+            lblTitulo.Size = new Size(274, 38);
             lblTitulo.TabIndex = 1;
             lblTitulo.Text = "Actualizar Modelo";
             // 
             // lblColumna
             // 
             lblColumna.AutoSize = true;
+            lblColumna.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             lblColumna.Location = new Point(23, 98);
             lblColumna.Name = "lblColumna";
-            lblColumna.Size = new Size(214, 20);
+            lblColumna.Size = new Size(234, 20);
             lblColumna.TabIndex = 2;
             lblColumna.Text = "Ingrese la columna a actualizar";
             // 
             // lblValor
             // 
             lblValor.AutoSize = true;
+            lblValor.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             lblValor.Location = new Point(364, 98);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(175, 20);
+            lblValor.Size = new Size(193, 20);
             lblValor.TabIndex = 3;
             lblValor.Text = "Ingresa el valor a insertar";
             // 
             // lblCondicion
             // 
             lblCondicion.AutoSize = true;
+            lblCondicion.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             lblCondicion.Location = new Point(72, 304);
             lblCondicion.Name = "lblCondicion";
-            lblCondicion.Size = new Size(283, 20);
+            lblCondicion.Size = new Size(307, 20);
             lblCondicion.TabIndex = 4;
             lblCondicion.Text = "Ingrese la condición para la actualización";
             // 
@@ -111,9 +115,10 @@
             // lblColumnaCondicion
             // 
             lblColumnaCondicion.AutoSize = true;
+            lblColumnaCondicion.Font = new Font("Segoe UI", 9F, FontStyle.Bold | FontStyle.Italic);
             lblColumnaCondicion.Location = new Point(16, 213);
             lblColumnaCondicion.Name = "lblColumnaCondicion";
-            lblColumnaCondicion.Size = new Size(240, 20);
+            lblColumnaCondicion.Size = new Size(257, 20);
             lblColumnaCondicion.TabIndex = 8;
             lblColumnaCondicion.Text = "Ingrese la columna de la condición";
             // 
