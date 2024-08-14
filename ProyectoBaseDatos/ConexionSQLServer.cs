@@ -23,7 +23,7 @@ namespace ProyectoBaseDatos
 
         public ConexionSQLServer()
         {
-            _strConexion = "Data Source=DESKTOP-LUT2TPL; Initial Catalog=NumismaticaBaseDatos; Integrated Security=SSPI";
+            _strConexion = "Data Source=(local); Initial Catalog=NumismaticaBaseDatos; Integrated Security=SSPI";
         }
 
 
